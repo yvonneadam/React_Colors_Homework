@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import { ColorBox } from "./components/ColorBox";
+import { ColorForm } from "./components/ColorForm/ColorForm";
+
+const colors = [
+  {
+    id: 1,
+    code: "#ff0000",
+  },
+  {
+    id: 2,
+    code: "#00ff00",
+  },
+  {
+    id: 3,
+    code: "#0000ff",
+  },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>| Pantone Color Matches | </h1>
+      <h2>Play with Cards</h2>
+      <ColorForm />
+      <div className="card__container">
+        {colors.map((color) => {
+          return <ColorBox color={color.code} key={color.id} />;
+        })}
+      </div>
     </div>
   );
 }
