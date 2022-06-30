@@ -6,9 +6,9 @@
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 45px;
   text-align: center;
-  background-color: #8df7c9;
+  background-color: #f1f7f4;
   padding: 40px;
 }
 
@@ -17,7 +17,7 @@ h2 {
   font-style: italic;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
   text-align: center;
-  background-color: #8df7c9;
+  background-color: #f2f6f4;
   margin-top: -25px;
 }
 
@@ -27,5 +27,5 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 35px;
-  background-color: white;
+  padding: 80px;
 }

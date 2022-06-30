@@ -1,6 +1,5 @@
 import React from "react";
 import "./ColorBox.css";
-import "./App.css";
 
 export const ColorBox = ({ color }) => {
   return (
@@ -9,7 +8,6 @@ export const ColorBox = ({ color }) => {
       style={{
         backgroundColor: color,
       }}
-      onClick={handleClick}
     >
       <input type="text" value={color} />
       <div className="color-box__delete">X</div>
